@@ -1,4 +1,4 @@
-package com.example.firstproject.controller;
+/*package com.example.firstproject.controller;
 
 import com.example.firstproject.dto.ArticleForm;
 import com.example.firstproject.entity.Article;
@@ -15,7 +15,7 @@ public class ArticleController {
         return "articles/new";}
     //ArticleRepository타입의 articleRepository 객체 선언
     @Autowired
-    private ArticleRepository articleRepository;
+    //private ArticleRepository articleRepository;
     //새로 제목,내용을 쓰고 submit으로 데이터를 받아올 경우엔 post매핑!!, method도 post이기 때문
     @PostMapping("/articles/create")
     public String createArticle(ArticleForm form){ //폼데이터를 dto로 받기
@@ -32,4 +32,4 @@ public class ArticleController {
         return "";
 
     }
-}
+//}*/

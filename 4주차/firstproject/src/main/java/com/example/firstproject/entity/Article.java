@@ -12,12 +12,36 @@ public class Article {
     @Id //엔티티의 대푯값 지정
     @GeneratedValue //자동으로 매겨짐
     private Long id;
-
     @Column //db 테이블의 title 열과 연결되도록 ..
     private String title;
-
     @Column
     private String content;
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+
 
     @Override
     public String toString() {
@@ -28,10 +52,10 @@ public class Article {
                 '}';
     }
 
-    public Article(Long id, String title, String content) {
+  /*  public Article(Long id, String title, String content) {
         this.id = id;
         this.title = title;
         this.content = content;
 
-    }
+    }*/
 }
